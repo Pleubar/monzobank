@@ -1,0 +1,105 @@
+.row1{
+    background-color: var(--darkblue);
+    border: transparent;
+    min-height: fit-content;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .columnone {
+    position: relative;
+    justify-content: left;  
+    width: 50%;
+    color: white;
+    padding: 40px;
+  }
+
+  .columnone, .columntwo {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .maintext {
+    color: var(--lightgrey);
+    font-size: var(--size4);
+    max-width: 425px;
+  }
+  
+  .parttext {
+    color: var(--bluegrey);
+    font-size: var(--size2);
+    padding-top: 60px;
+    padding-right: 60px;
+    
+  }
+  
+  .download {
+  padding-top: 25px;
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  justify-content: left;
+  }
+  
+  .appstore {
+    padding-right: 15px;
+  }
+  
+  .appstore, .googleplay {
+    position: relative;
+  }
+  
+  .columntwo {
+    background-image: url(../img/cards-desktop.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+  }
+  
+  
+  @media (max-width: 700px) {
+    .row1 {
+      display: block;
+      padding: 40px;
+      padding-bottom: 0;
+    }
+    .columntwo {
+      background-image: url(../img/cards-mobile.png);
+      background-position: center bottom;
+      background-size: contain;
+      min-height: 400px;
+    }
+    .columnone, .columntwo, .maintext {
+      width: 100%;
+    }
+    .columnone {
+      padding: 0;
+    }
+    .maintext {
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .columntwo {
+      min-height: 300px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .row1 {
+      padding: 10px;
+      padding-bottom: 0;
+    }
+    .parttext {
+      padding-top: 20px;
+    }
+    .download {
+      flex-direction: column;
+      align-content: center;
+    } 
+  }

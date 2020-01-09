@@ -1,0 +1,132 @@
+.row3 {
+    background-color: var(--greywhite);
+    min-height: 800px;
+    color: white;
+    padding: 40px;
+    background-image: url(../img/images-current-account/current-account.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 130% 55%; 
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+  
+  
+  .textrow3 {
+    padding-top: 170px;
+    max-width: 420px;
+  
+  }
+  
+  .boxes {
+    align-self: center;  
+    color: var(--darkblue);
+    padding-top: 140px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+  
+  
+  .boxone, .boxtwo, .boxthree, .boxfour {
+    border-radius: 4px;
+    background-color: white;
+    max-width: 540px;
+    padding: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;  
+  }
+  
+  .boxtwo, .boxfour {
+    margin-left: auto;
+  }
+  
+  .textbox {
+    width: 75%;
+    text-align: left;
+    position: relative;
+    padding-top: 10px;
+  }
+    
+  
+  .imgbox {
+    width: 25%;
+    justify-self: center;
+    position: relative;
+    padding-left: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
+  .imgbox1 {
+    padding-bottom: 23px;
+  }
+  
+  .imgbox2 {
+    align-self: center;
+  }
+  
+  @media (max-width:1160px) {
+    .boxone, .boxtwo, .boxthree, .boxfour {
+      max-width: 490px;
+    }
+  }
+
+  @media (max-width:1060px) {
+    .boxone, .boxtwo, .boxthree, .boxfour {
+      max-width: 460px;
+    }
+  }
+
+  @media (max-width:1000px) {
+    .boxone, .boxtwo, .boxthree, .boxfour {
+      max-width: 400px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .boxone, .boxtwo, .boxthree, .boxfour {
+      flex-direction: column;
+      margin-left: 0;
+      min-width: 100%;
+    } 
+    .textbox {
+      width: 100%;
+    }
+    .imgbox {
+      padding-left: 0;
+      padding-top: 30px;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    } 
+  }
+  
+  @media (max-width: 700px) {
+    .row3 {
+      background-size: 140% 40%; 
+    }
+    .boxone, .boxtwo, .boxthree, .boxfour {
+      max-width: 100%;
+    }
+    .boxone, .boxthree {
+      margin-right: 0;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .row3 {
+        padding: 10px;
+        background-size: 140% 20%;
+    }
+    .textrow3 {
+      padding-top: 70px;
+    } 
+    .boxes {
+        padding-top: 30px;
+    }
+  }
+  

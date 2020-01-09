@@ -1,0 +1,14 @@
+:root {
+    --darkblue: rgb(19, 26, 46);
+    --lightgrey: rgb(140, 143, 158);
+    --brightblue: rgb(29, 162, 250);
+    --bluegrey: rgba(82, 93, 121, 0.836);
+    --greywhite: rgb(219, 219, 230);
+    --size1: 14px;
+    --size2: 16px;
+    --size3: 18px;
+    --size4: 21px;
+    --size5: 25px; 
+    --size6: 30px;
+    --size7: 38px;
+}

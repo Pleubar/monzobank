@@ -1,0 +1,81 @@
+.footer {
+    background-color: var(--darkblue);
+    min-height: fit-content;
+    padding: 40px;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+  }
+
+  .logobottom {
+    position: relative;
+    padding-right: 50px;
+  }
+
+  .navbottom{
+    text-align: left;
+    max-width: fit-content;
+    position: relative;
+  }
+  
+  .navbottom a {
+    font-size: var(--size2);
+    color: white;
+    text-decoration: none;
+    padding-right: 110px;
+    display: inline-block; 
+  }
+  
+  .icons {
+    position: absolute;  
+    right: 40px;  
+    display: flex;
+    flex-direction: row;  
+  }
+  
+  .twitter, .instagram, .facebook, .linkedin, .youtube {
+    background-color: var(--bluegrey);
+    border-radius: 6px;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    margin: 10px;
+  }
+  
+  .twitter, .facebook, .linkedin, .youtube {
+    padding-top: 10px;
+  }
+  
+  .youtube {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 900px) {
+    .icons {
+      position: relative;
+      padding-left: 40px;
+      padding-top: 25px;
+    }
+    .navbottom a {
+        padding-right: 70px;
+    } 
+  }
+  
+  @media (max-width: 600px) {
+    .navbottom a {
+      padding-right: 50px;
+    } 
+    .navbottom a:last-child {
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .navbottom a {
+      padding-right: 30px;
+    } 
+    .footer {
+        padding: 10px;
+    }
+  }
+  
